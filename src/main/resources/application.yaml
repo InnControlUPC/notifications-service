@@ -1,3 +1,8 @@
 spring:
   application:
     name: notifications-service
+
+inncontrol:
+  notifications:
+    global:
+      topic: /user/global/notifications
