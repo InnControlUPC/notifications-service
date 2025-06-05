@@ -18,7 +18,7 @@ spring:
 inncontrol:
   notifications:
     global:
-      topic: /user/global/notifications
+      topic: /users/global/notifications
 
 eureka:
   instance:
