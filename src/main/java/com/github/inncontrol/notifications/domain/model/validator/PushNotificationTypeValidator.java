@@ -1,4 +1,4 @@
-package com.github.inncontrol.notifications.shared.domain.valueobjects.validator;
+package com.github.inncontrol.notifications.domain.model.validator;
 
 import com.github.inncontrol.notifications.domain.model.valueobjects.PushNotificationType;
 import lombok.experimental.UtilityClass;

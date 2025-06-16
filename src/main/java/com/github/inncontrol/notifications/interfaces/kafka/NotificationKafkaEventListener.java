@@ -6,7 +6,7 @@ import com.github.inncontrol.notifications.domain.command.SendUserPushNotificati
 import com.github.inncontrol.notifications.domain.model.aggregates.PushNotification;
 import com.github.inncontrol.notifications.domain.services.NotificationCommandService;
 import com.github.inncontrol.notifications.interfaces.kafka.assembler.PushNotificationEntityFromResourceAssembler;
-import com.github.inncontrol.notifications.interfaces.kafka.resource.PushNotificationResource;
+import com.github.inncontrol.shared.interfaces.kafka.resource.PushNotificationResource;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

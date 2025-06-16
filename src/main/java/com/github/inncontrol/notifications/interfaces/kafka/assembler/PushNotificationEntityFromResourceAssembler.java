@@ -2,8 +2,8 @@ package com.github.inncontrol.notifications.interfaces.kafka.assembler;
 
 import com.github.inncontrol.notifications.domain.model.aggregates.PushNotification;
 import com.github.inncontrol.notifications.domain.model.valueobjects.PushNotificationType;
-import com.github.inncontrol.notifications.interfaces.kafka.resource.PushNotificationResource;
-import com.github.inncontrol.notifications.shared.domain.valueobjects.validator.PushNotificationTypeValidator;
+import com.github.inncontrol.shared.interfaces.kafka.resource.PushNotificationResource;
+import com.github.inncontrol.notifications.domain.model.validator.PushNotificationTypeValidator;
 import lombok.experimental.UtilityClass;
 
 /**

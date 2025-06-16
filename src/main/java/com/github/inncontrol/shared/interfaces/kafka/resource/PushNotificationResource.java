@@ -1,4 +1,4 @@
-package com.github.inncontrol.notifications.interfaces.kafka.resource;
+package com.github.inncontrol.shared.interfaces.kafka.resource;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
