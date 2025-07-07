@@ -1,4 +1,4 @@
-package com.github.inncontrol.notifications;
+package com.github.inncontrol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

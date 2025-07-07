@@ -4,6 +4,7 @@ import com.github.inncontrol.notifications.domain.command.SendGlobalPushNotifica
 import com.github.inncontrol.notifications.domain.command.SendMailNotificationCommand;
 import com.github.inncontrol.notifications.domain.command.SendUserPushNotificationCommand;
 import com.github.inncontrol.notifications.domain.services.NotificationCommandService;
+import com.github.inncontrol.notifications.infrastructure.outbound.mailjet.MailJetOutBoundService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -20,6 +21,7 @@ import org.springframework.stereotype.Service;
 public class NotificationCommandServiceImpl implements NotificationCommandService {
 
     private final SimpMessagingTemplate messagingTemplate;
+    private final MailJetOutBoundService mailJetOutBoundService;
 
     @Override
     public void handle(SendGlobalPushNotificationCommand command) {
@@ -36,6 +38,6 @@ public class NotificationCommandServiceImpl implements NotificationCommandServic
 
     @Override
     public void handle(SendMailNotificationCommand command) {
-
+        mailJetOutBoundService.getProvider().sendEmail(command.getTo(), command.getSubject(), command.getBody());
     }
 }
